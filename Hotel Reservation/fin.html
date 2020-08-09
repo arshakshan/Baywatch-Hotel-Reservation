@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<hmtl>
+    <head>
+        <meta charset= "utf-8">
+        <style type="text/css">
+        
+            #topbar {
+                
+                width: 99%;
+                height: 150px;
+                background-color: lightgrey;
+                opacity: 0.5;
+                position: fixed;
+                margin: 0 auto;   
+            
+            }
+            
+                      
+            #homepic{
+                background-image: url("pic1.jpg");
+
+  /* Set a specific height */
+            height: 800px; 
+
+  /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+}
+            #logo{
+                
+                height: auto;
+                width: 140px;
+                margin-top: 10px;
+                margin-left: 20px;
+                
+            }
+           
+            #firstbody{
+                
+                height: 300px;
+                background-color: whitesmoke;
+                opacity: 0.5;
+                width:auto;
+                
+            }
+            
+            div#nav_menu{
+                position: absolute;
+                top: 100px;
+                right: 0px}
+            
+            div#nav_menu button{
+                border-radius: 15px;
+                border: 10px;
+                font-size: 20px;
+                font-family: garamond;
+                background-color: transparent;
+            }
+            
+            div#nav_menu button:hover{
+                background-color: midnightblue;
+                color:white;                    
+            }
+            
+            button#active {color: black;
+                        font-weight: 600;
+                            background-color: black;}
+           
+            button#inquiry_button{
+                position: absolute;
+                top:50px;
+                right: 20px;
+                font-family: "Bell MT";
+                font-size: 18px;
+                background-color: transparent;
+                border: 10px;
+                
+            }
+            
+            button#inquiry_button:hover{
+                
+                background-color: midnightblue;
+                color:white;
+                font-weight: 300;
+                border-radius: 10px;
+                border: 5px;
+          
+            }
+            
+            #hotel1{
+                
+                margin: 3 auto;
+                text-align: center; 
+                float: center;
+                font-family: garamond;
+                font-size:30px; 
+            }
+            
+            #hotel2{
+                
+                margin-right: 200px;
+                margin-left: 200px;
+                text-align: center;
+                font-family: garamond;
+                font-size: 24px;
+                float: center;
+                
+            }
+            
+            #hotel3{
+                
+                text-align: center;
+                font-family: garamond;
+                font-size: 26px;
+                float:center;
+                
+            }
+        
+            #hotel_last{
+                
+                background-color: "#F8F2EE";
+                height: 200px;
+                width: auto;
+                font-family: garamond;
+                font-size: 20px;
+            }
+           
+            #footer
+            
+        </style>
+        
+        <script type="text/javascript">
+            
+         
+            
+            function contact(){
+                
+                alert("CONTACT : +1 4442807\nEMAIL : info@baywatchresort.com");
+            }
+            
+            var image1=new Image()
+                image1.src="room5.jpg";
+            var image2= new Image()
+                image2.src="room2.jpg";
+            var image3= new Image()
+                image3.src="room3.jpg";
+            
+            var step=1;
+            function slideit(){
+                
+                document.images.slide.src=eval("image"+step+'.src');
+                if(step<3)
+                    step++;
+                else
+                    step=1;
+                setTimeout("slideit()",2500)
+            }
+            
+        </script>
+    </head>
+    
+    <body >
+        
+        
+        <div id="topbar" name="pop1">
+            <img src="logo.png" id="logo"> 
+            <button onclick="contact()" id='inquiry_button'>INQUIRY</button>
+    
+            <div id="nav_menu">
+                
+                <a href="try1.html"><button id='active'>Home</button></a>&nbsp;&nbsp;
+                <a href="booking.html"><button>Booking</button></a>&nbsp;&nbsp;
+                <button onclick="new.html">Rooms</button>&nbsp;&nbsp;
+                <a href=""><button>Gallery</button></a>&nbsp;&nbsp;
+        
+            </div>
+            
+        </div>
+        <div id="homepic" >
+                        <a id="top"></a>
+
+        </div>
+        
+        <div id="firstbody">
+            
+            <p id="hotel1"><b>Baywatch</b> Beach Resort</p>
+            <p id="hotel2"> Tucked away in the northern Caribbean, Anguilla blends the casual, easy spirit of the islands with an unmistakable exclusivity and elegance that captivates visitors from around the world. Coated with unparalleled white sand beaches and surrounded by stunning turquoise waters, the island's beauty and tranquility create a space that relaxes the mind and refreshes the spirit. Experience Baywatch Beach Resort, where luxury meets intimacy in an exclusive beachfront boutique resort.</p>
+            <p id="hotel3"><b>Come as a guest, Leave as a Friend!</b></p>
+        </div>  
+        
+        <div id="slideshow-container">
+        
+                <img src="room1.jpg" width="100%" name="slide" height="768px">
+                <script type="text/javascript">
+                slideit();
+                    </script>
+        </div>
+        
+        
+        
+        
+        <div id="footer">
+            
+            <a href="#top" id="footer" style="color: #064A60;"> GO TO TOP </a>
+        
+        </div>
+
+      
+            
+    
+        
+    </body>
+</hmtl>

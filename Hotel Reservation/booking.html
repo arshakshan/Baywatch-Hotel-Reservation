@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset= "utf-8">
+        <style type="text/css">
+            
+     
+        
+            #topbar {
+                
+                width: 99%;
+                height: 150px;
+                background-color: lightgrey;
+                opacity: 0.5;
+                position: fixed;
+                margin: 0 auto;   
+            
+            }
+            
+                      
+            #homepic{
+                background-image: url("about.jpg");
+
+  /* Set a specific height */
+            height: 800px; 
+
+  /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+}
+            #logo{
+                
+                height: auto;
+                width: 140px;
+                margin-top: 10px;
+                margin-left: 20px;
+                
+            }
+           
+            #firstbody{
+                
+                height: 300px;
+                background-color: whitesmoke;
+                opacity: 0.5;
+                width:auto;
+                
+            }
+            
+            div#nav_menu{
+                position: absolute;
+                top: 100px;
+                right: 0px}
+            
+            div#nav_menu button{
+                border-radius: 15px;
+                border: 10px;
+                font-size: 20px;
+                font-family: garamond;
+                background-color: transparent;
+            }
+            
+            div#nav_menu button:hover{
+                background-color: midnightblue;
+                color:white;                    
+            }
+           
+            button#inquiry_button{
+                position: absolute;
+                top:50px;
+                right: 20px;
+                font-family: "Bell MT";
+                font-size: 18px;
+                background-color: transparent;
+                border: 10px;
+                
+            }
+            
+            #resv_button{
+                position: absolute;
+                top:50px;
+                float:left;
+                right: 130px;
+                font-family: "Bell MT";
+                font-size: 18px;
+                color: black;
+                background-color: transparent;
+                border: 10px;
+                
+            }
+            #resv_button:hover{
+                
+                background-color: midnightblue;
+                color:white;
+                font-weight: 300;
+                border-radius: 10px;
+                border: 5px;
+          
+            }
+            button#inquiry_button:hover{
+                
+                background-color: midnightblue;
+                color:white;
+                font-weight: 300;
+                border-radius: 10px;
+                border: 5px;
+          
+            }
+             button#active {color: black;
+                        font-weight: 600;
+                            background-color: black;}
+           
+            
+            #top_book{
+                
+                 background-color: transparent;
+                width: auto;
+                height: auto;
+                font-size: 32px;
+                
+            }
+            
+            #title{
+                
+               
+                font-family: garamond;
+                font-weight: 700;
+                text-align: center;
+            }
+            
+            #form_title
+            {
+                padding-left: 300px;
+                font-family: garamond;
+                font-weight: 700;
+                font-size: 25px;
+            }
+            
+            #form_sub{
+                
+                padding-left: 300px;
+                font-family: garamond;
+                font-weight: 500;
+                font-size: 15px;
+            }
+            
+            #field_title{
+                
+                padding-left: 300px;
+                font-family: garamond;
+                font-weight: 500;
+                font-size: 15px;
+                
+            
+            }
+            
+            #form1{
+                
+                margin-left: 300px;
+                border: none;
+                border-bottom: 2px solid red;
+                width: 300px;
+            }
+            
+            #form-field{
+                
+                height: 900px;
+                background-color: transparent;
+                
+                
+            }
+            
+            #Roomlist{
+                
+                margin-left: 300px;
+                border: none;
+                border-bottom: 2px solid red;
+                width: 300px;
+            }
+            
+            #submit1{
+                
+                margin-left: 300px;
+                font-size: 20px;
+                background-color: lightsalmon;
+                border-radius:5px;
+                font-family: garamond; 
+                padding-top: 10.5px;
+                padding-bottom: 10.5px; 
+                padding-left: 21px;
+                padding-right: 21px; 
+            }
+            
+            #submit1:hover{
+                
+                background-color: #F98669;
+            }
+        </style>
+        
+        <script type="text/javascript">
+            
+         
+            
+            function contact(){
+                
+                alert("CONTACT : +1 4442807\nEMAIL : info@baywatchresort.com");
+            }
+            
+                  
+        </script>
+    </head>
+    
+    <body >
+        
+        
+        <div id="topbar" name="pop1">
+            <img src="logo.png" id="logo"> 
+            <a href="rvw.html"><button id='resv_button'>ABOUT BOOKING</button></a>
+            <button onclick="contact()" id='inquiry_button'>INQUIRY</button>
+    
+            <div id="nav_menu">
+                
+                  <a href="try1.html"><button>Home</button></a>&nbsp;&nbsp;
+                <button id='active'>Booking</button>&nbsp;&nbsp;
+                <a href="room.html"><button>Rooms</button></a>&nbsp;&nbsp;
+                <a href="gallery.html"><button>Gallery</button></a>&nbsp;&nbsp;
+        
+            </div>
+        
+    
+        </div>
+        
+        <div id="homepic">
+        </div>
+        
+        <div id="booking">
+            
+            <div id="top_book">
+                <p id="title">Book Your Desired Room</p>
+                <hr>
+            </div>
+            <div id="form-field">
+                <p id="form_title">Book Now</p>
+                <p id="form_sub">Please Fill in the Required details</p>
+            <form action="rooms1.php" method="post" target="_blank" accept-charset="utf-8" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+                <p id="field_title">Name<sup>*</sup></p>
+                <input type="text" id="form1" name="firstname" required><br>
+                <p id="field_title">Last Name</p>
+                <input type="text" id="form1" name="lastname"><br>
+                <p id="field_title">Email-id<sup>*</sup></p>
+                <input type="email" id="form1" name="email"><br>
+                
+                <p id="field_title">Phone<sup>*</sup></p>
+                <input type="text" id="form1" name="phone"><br>
+                
+                <p id="field_title">From<sup>*</sup></p>
+                <input type="date" id="form1" name="from" value="dd/mm/yy">&nbsp;
+                <p id="field_title">To<sup>*</sup></p>
+                <input type="date" id="form1" name="to"value="dd/mm/yy">&nbsp;
+                <p id="field_title">Occupancy<sup>*</sup></p>
+                <input type=number id="form1" name="occupancy">&nbsp;
+                <p id="field_title">Room type<sup>*</sup></p>
+                <input list="Rooms" name="Choice" id="Roomlist">
+                        <datalist id="Rooms">
+                            <option value="One Bedroom Suites"></option>
+                            <option value="Two Bedroom Suites"></option>
+                            <option value="Luxury Ocean View Rooms"></option>
+                            <option value="The Villa"></option>
+                        </datalist><br><br><br>
+                
+                <input type="submit" name="submit" id="submit1" >
+            </form>
+                </div>
+            
+        </div>
+    </body>
+    
+</html>    
+    
