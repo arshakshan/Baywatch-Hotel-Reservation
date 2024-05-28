@@ -40,7 +40,7 @@ Configure the database connection:
 
 Start the server:
 
--Use a local server like XAMPP or WAMP to host the project.
+- Use a local server like XAMPP or WAMP to host the project.
 - Place the project files in the server's root directory (e.g., htdocs for XAMPP).
 
 ## Usage
