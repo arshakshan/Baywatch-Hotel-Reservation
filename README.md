@@ -20,7 +20,7 @@ The Hotel Reservation System is a web application that allows users to view avai
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/hotel-reservation.git
+git clone https://github.com/arshakshan/Baywatch-Hotel-Reservation.git
 ```
 
 Navigate to the project directory:
